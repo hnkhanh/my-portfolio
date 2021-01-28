@@ -192,7 +192,7 @@ nav,
 }
 .about-desc .rotate {
   position: absolute;
-  top: 0px;
+  top: 8px;
   left: 10px;
 }
 .about-desc .rotate .heading {
