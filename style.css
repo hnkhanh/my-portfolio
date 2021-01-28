@@ -799,8 +799,8 @@ input.validate.valid {
 }
 
 .button button {
-  position: relative;
-  margin-top: -365;
+  position: absolute;
+  margin-top: 0px;
   left: 0;
   border: none;
 }
