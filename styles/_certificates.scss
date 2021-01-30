@@ -1,0 +1,19 @@
+#certificates {
+  background: url(https://i.pinimg.com/originals/9e/05/f9/9e05f930e4cb3855169205c469cf3b99.jpg)
+    no-repeat fixed top;
+  @include page-ids-settings;
+}
+.carousel.certs {
+  height: 450px;
+  .carousel-item {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    margin-top: 30px;
+    img {
+      width: auto !important;
+      height: 400px !important;
+    }
+  }
+}

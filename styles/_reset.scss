@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fafafa;
+  color: rgb(255, 255, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(0, 17%, 95%);
+  font-weight: 700;
+  font-family: "Open Sans", Georgia, serif;
+  margin: 0;
+  padding: 20px 0;
+}
+a {
+  transition: 0.3s all;
+  color: hsl(0, 17%, 95%);
+  &:hover {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+.container {
+  width: 90%;
+}

@@ -1,0 +1,37 @@
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  background-color: rgb(128, 102, 68);
+  line-height: 1.5;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.fas.fa-heart {
+  color: rgb(255, 0, 0);
+  animation: heartbeat 1s infinite;
+}

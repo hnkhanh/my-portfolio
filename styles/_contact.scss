@@ -1,0 +1,115 @@
+#contact {
+  background: url(https://i.pinimg.com/originals/67/96/7d/67967dd014c7ba4e623f9e027332c86f.jpg);
+  @include page-ids-settings;
+}
+.contact {
+  margin-top: 30px;
+  & .contact-form > .container,
+  & .contact-info > .container {
+    border: #bdb5b5 solid 1px;
+    border-radius: 2%;
+    padding: 0 2%;
+    margin-top: 20px;
+    min-height: 520px;
+    backdrop-filter: blur(7px);
+    @include respond(phone) {
+      height: 550px;
+    }
+  }
+}
+.contact-form {
+  * {
+    color: white;
+  }
+  .input-field {
+    > label {
+      color: white;
+    }
+    .prefix {
+      top: 1rem;
+    }
+  }
+  textarea.materialize-textarea {
+    height: 8rem !important;
+    overflow-y: auto;
+  }
+  input.validate.valid {
+    margin-top: 3px;
+  }
+
+  .button {
+    width: 150px;
+    height: 45px;
+    fill: none;
+    display: block;
+    position: relative;
+    margin: auto;
+    @include respond(phone) {
+      top: 420px;
+    }
+    @include respond(tab-port) {
+      top: 390px;
+    }
+    button {
+      position: absolute;
+      margin-top: 0px;
+      left: 0;
+      border: none;
+    }
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    rect {
+      stroke-width: 6px;
+      stroke: #19f6e8;
+      stroke-dasharray: 100 400;
+      stroke-dashoffset: 278;
+      transition: all 1.2s cubic-bezier(0, 0.1, 0.01, 1);
+    }
+    div {
+      width: 150px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      font-size: 16px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 0;
+      top: 0;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+    }
+    &:hover {
+      div {
+        font-weight: 600;
+      }
+      rect {
+        stroke-width: 4px;
+        stroke-dasharray: 20 0;
+        stroke-dashoffset: 0;
+        transition: all 0.7s ease-in;
+      }
+    }
+  }
+}
+.contact-info .site-contact-details {
+  padding-top: 20px;
+}
+
+.site-contact-details {
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    > span {
+      color: white;
+      letter-spacing: 0.15em;
+      line-height: 1.6;
+      font-size: 12px;
+      font-weight: 800;
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+nav.nav-center {
+  ul {
+    text-align: center;
+  }
+  li {
+    display: inline;
+    float: none;
+  }
+}
+.nav-wrapper > ul > li > a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  padding: 0 30px;
+}
