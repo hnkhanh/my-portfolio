@@ -64,7 +64,7 @@ nav.nav-center li {
 nav,
 #welcome {
   background: linear-gradient(-45deg, #9e1850, #3f1d6d, #042a33, #221691);
-  background-size: 200% 200%;
+  background-size: 300% 300%;
   -webkit-animation: gradient 5s ease infinite;
   animation: gradient 5s ease infinite;
 }
@@ -323,7 +323,7 @@ nav,
   letter-spacing: 0.1em;
 }
 
-.about-desc .scroll-btn {
+.scroll-btn {
   display: inline-block;
   background-color: none;
   border: whitesmoke solid 1px;
@@ -341,7 +341,7 @@ nav,
   z-index: 1000;
 }
 
-.about-desc .scroll-btn span {
+.scroll-btn span {
   font-weight: normal;
   font-style: normal;
   font-size: 2em;
@@ -349,16 +349,16 @@ nav,
   color: #fff;
 }
 
-.about-desc .scroll-btn:hover {
+.scroll-btn:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.719);
 }
 
-.about-desc .scroll-btn:hover span {
+.scroll-btn:hover span {
   color: #19f6e8;
 }
 
-.about-desc .scroll-btn.show {
+.scroll-btn.show {
   opacity: 1;
   visibility: visible;
 }
