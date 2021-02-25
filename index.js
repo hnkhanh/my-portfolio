@@ -4,14 +4,7 @@ $(document).ready(function(){
   $('.scrollspy').scrollSpy({
     scrollOffset: 0,
   });
-  //scroll to contact
-  let contact = $('.contact-btn');
-  contact.on('click', function(e){
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $('#contact').offset().top
-      }, 800);
-  })
+  
 
   //scroll to top button
   let topBtn = $('.scroll-btn');
