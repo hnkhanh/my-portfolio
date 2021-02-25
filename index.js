@@ -52,8 +52,9 @@ $(document).ready(function(){
  $('.carousel.certs').carousel({
   duration: 50,
   numVisible: 3,
-  shift: 150,
-  dist: -150,
+  shift: 250,
+  dist: -100,
+  indicators: true,
 })
 
    //skill icons spin animation

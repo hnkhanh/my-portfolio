@@ -575,8 +575,7 @@ nav,
   pointer-events: none;
   width: 100%;
   overflow: hidden;
-  background: url(https://images.wallpapersden.com/image/download/geometry-shapes-minimalism-artwork_a2dlZ26UmZqaraWkpJRqZmdlrWdtbWU.jpg)
-    no-repeat fixed top;
+  background: url(../img/bgouter.jpg) no-repeat fixed top;
   z-index: -2;
   opacity: 1;
   background-size: cover;
@@ -585,31 +584,31 @@ nav,
 
 @media screen and (max-width: 600px) {
   #skills .bgouter {
-    height: 2000px;
+    height: 2500px;
   }
 }
 
 @media screen and (min-width: 600px) {
   #skills .bgouter {
-    height: 1500px;
+    height: 1600px;
   }
 }
 
 @media screen and (min-width: 768px) {
   #skills .bgouter {
-    height: 1500px;
+    height: 1600px;
   }
 }
 
 @media screen and (min-width: 992px) {
   #skills .bgouter {
-    height: 1200px;
+    height: 1400px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #skills .bgouter {
-    height: 1000px;
+    height: 1400px;
   }
 }
 
@@ -618,6 +617,10 @@ nav,
   margin: 15px -46px;
 }
 
+.redux {
+  position: absolute;
+  margin: 15px -46px;
+}
 @-webkit-keyframes flipInY {
   0% {
     -webkit-transform: perspective(400px) rotateY(90deg);
@@ -809,18 +812,21 @@ nav,
   background: linear-gradient(135deg, #185a9d 0%, #43cea2 100%);
 }
 
-.skill-item.seo i.fa-circle {
-  color: #43a047;
+.skill-item.rdx i.fa-circle {
+  color: #9c27b0;
 }
 
-.skill-item.seo:hover i.fa-search {
-  color: #43a047;
+.skill-item.rdx:hover .redux {
+  -webkit-filter: invert(21%) sepia(59%) saturate(3200%) hue-rotate(277deg)
+    brightness(93%) contrast(97%);
+  filter: invert(21%) sepia(59%) saturate(3200%) hue-rotate(277deg)
+    brightness(93%) contrast(97%);
 }
 
-.skill-item.seo:hover,
-.skill-item.seo:hover ~ .bg {
+.skill-item.rdx:hover,
+.skill-item.rdx:hover ~ .bg {
   opacity: 1;
-  background: linear-gradient(135deg, #00c266 0%, #1f4037 100%);
+  background: linear-gradient(135deg, #4b384c 0%, #da5de2 100%);
 }
 
 .skill-item.sass i.fa-circle {
@@ -838,17 +844,17 @@ nav,
 }
 
 .skill-item.ajax i.fa-circle {
-  color: #9c27b0;
+  color: #43a047;
 }
 
 .skill-item.ajax:hover i.fa-sitemap {
-  color: #9c27b0;
+  color: #43a047;
 }
 
 .skill-item.ajax:hover,
 .skill-item.ajax:hover ~ .bg {
   opacity: 1;
-  background: linear-gradient(135deg, #4b384c 0%, #da5de2 100%);
+  background: linear-gradient(135deg, #00c266 0%, #1f4037 100%);
 }
 
 .skill-item:hover i.fa-circle {
@@ -861,9 +867,11 @@ nav,
   background-size: cover;
   padding: 5% 0;
 }
-
+.certificates {
+  height: 500px;
+}
 .carousel.certs {
-  height: 450px;
+  height: 100%;
 }
 
 .carousel.certs .carousel-item {
@@ -876,15 +884,18 @@ nav,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%;
-  margin-top: 30px;
+  height: 90%;
+  margin-top: 0;
 }
 
 .carousel.certs .carousel-item img {
   width: auto !important;
-  height: 400px !important;
+  height: 100% !important;
 }
 
+.carousel.certs .indicators {
+  bottom: -25px;
+}
 #contact {
   background: url(https://i.pinimg.com/originals/67/96/7d/67967dd014c7ba4e623f9e027332c86f.jpg);
   background-size: cover;
